@@ -1,0 +1,19 @@
+<app-nav></app-nav>
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <div class="info-list">
+                <h1 class="title-list">Contatos</h1>
+                <p>Pague agora um amigo com o PicPay! :)</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <app-search 
+            (typing)="filter = $event"
+            [value]="filter"></app-search>
+        </div>
+    </div>
+    <div class="list-users">
+        <app-user [users]="users | filterByName : filter"></app-user>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="float-lg-right">
+    <form class="form-inline form-group">
+        <div class="input-group mb-3 mb-md-0">
+            <div class="input-group-prepend align-items-center">
+                <fa class="search-icon mr-2" name="search"></fa>
+            </div>
+            <input 
+                name="search"
+                class="form-control form-control-lg input-search" 
+                type="text" 
+                placeholder="Pesquise um contato" 
+                (keyup)="debounce.next($event.target.value)"
+                [value]="value">
+        </div>
+    </form>
+</div>

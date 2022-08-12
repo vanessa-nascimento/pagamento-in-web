@@ -1,0 +1,21 @@
+<div *ngIf="!users.length">
+    <h5 class="text-center text-muted">Desculpe, não encontramos este nome por aqui :(</h5>
+</div>
+<div class="card" *ngFor="let user of users | filterByName : filter">
+    <div class="card-body row align-items-center">
+        <div class="col-3 col-md-1">
+            <img [src]="user.img" class="rounded-img border" [alt]="user.name">
+        </div>
+        <div class="col-9 col-md-8">
+            <h5 class="card-title m-0">{{user.username}}</h5>
+            <p class="card-text">{{user.name}}</p>
+        </div>
+        <div class="col-12 col-md-3 text-right mt-3 mt-md-0">
+            <app-payment 
+            [id]="user.id"
+            [username]="user.username"
+            [user]="user.name"
+            [image]="user.img"></app-payment>
+        </div>
+    </div>
+</div>

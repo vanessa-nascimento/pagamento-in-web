@@ -1,0 +1,21 @@
+.navbar{
+    border-bottom: 1px solid #ced4da;
+    .navbar-brand{
+        img{
+            width: 135px;
+        }
+    }
+
+    .download-button{
+        background: #11c76f;
+        border-radius: 40px;
+        color: #fff;
+        line-height: 40px;
+        padding: 2px 25px;
+        font-size: 14px;
+        font-weight: bold;
+        transition: 0.25s ease-in;
+        max-width: 170px;
+    }
+
+}

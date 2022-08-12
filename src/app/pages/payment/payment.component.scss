@@ -1,0 +1,49 @@
+.info-payment{
+    margin-bottom: 20px;
+
+    .rounded-img{
+        width: 60px;
+        border-radius: 50%;
+    }
+}
+
+.p-username{
+    font-size: 16px;
+}
+
+.p-user{
+    font-size: 11px;
+    color: #606060;
+}
+
+.img-card{
+    width: 50px;
+}
+
+.modal-footer{
+    .row{
+        margin-bottom: 12px;
+    }
+}
+
+.title-feedback{
+    font-size: 30px;
+    font-weight: 600;
+
+    &.success{
+        color: #11c76f;
+    }
+    &.error{
+        color: #e74c3c;   
+    }
+}
+
+.icon-feedback{
+    width: 100px;
+}
+
+@media (max-width: 768px) {
+    .btn-pay{
+        width:100%;
+    }
+}
